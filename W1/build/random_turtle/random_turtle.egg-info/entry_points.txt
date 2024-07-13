@@ -1,0 +1,3 @@
+[console_scripts]
+start = random_turtle.random_walk:main
+
