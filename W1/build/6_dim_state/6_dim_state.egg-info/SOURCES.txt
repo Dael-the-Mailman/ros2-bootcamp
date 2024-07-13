@@ -10,6 +10,8 @@ setup.py
 ../../build/6_dim_state/6_dim_state.egg-info/top_level.txt
 ../../build/6_dim_state/6_dim_state.egg-info/zip-safe
 6_dim_state/__init__.py
+6_dim_state/publisher_member_function.py
+6_dim_state/subscriber_member_function.py
 resource/6_dim_state
 test/test_copyright.py
 test/test_flake8.py

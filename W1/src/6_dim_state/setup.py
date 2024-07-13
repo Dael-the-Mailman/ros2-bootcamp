@@ -20,6 +20,8 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
+            'publisher = 6_dim_state.publisher_member_function:main',
+            'subscriber = 6_dim_state.subscriber_member_function:main'
         ],
     },
 )

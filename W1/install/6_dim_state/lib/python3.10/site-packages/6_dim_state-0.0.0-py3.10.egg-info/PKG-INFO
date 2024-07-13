@@ -1,11 +1,11 @@
 Metadata-Version: 2.1
 Name: 6-dim-state
 Version: 0.0.0
-Summary: TODO: Package description
+Summary: Generates a random 7-dim state and echos a 6-dim state
 Home-page: UNKNOWN
 Maintainer: dev-desktop
 Maintainer-email: kalebugalde@gmail.com
-License: Apache-2.0
+License: Apache License 2.0
 Platform: UNKNOWN
 License-File: LICENSE
 
