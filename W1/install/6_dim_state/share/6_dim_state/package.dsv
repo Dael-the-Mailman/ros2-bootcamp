@@ -1,0 +1,6 @@
+source;share/6_dim_state/hook/pythonpath.ps1
+source;share/6_dim_state/hook/pythonpath.dsv
+source;share/6_dim_state/hook/pythonpath.sh
+source;share/6_dim_state/hook/ament_prefix_path.ps1
+source;share/6_dim_state/hook/ament_prefix_path.dsv
+source;share/6_dim_state/hook/ament_prefix_path.sh
