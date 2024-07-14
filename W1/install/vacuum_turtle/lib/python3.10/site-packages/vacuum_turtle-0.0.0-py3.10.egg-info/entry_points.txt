@@ -1,0 +1,3 @@
+[console_scripts]
+start = vacuum_turtle.spiral_turtle:main
+

@@ -1,0 +1,6 @@
+source;share/vacuum_turtle/hook/pythonpath.ps1
+source;share/vacuum_turtle/hook/pythonpath.dsv
+source;share/vacuum_turtle/hook/pythonpath.sh
+source;share/vacuum_turtle/hook/ament_prefix_path.ps1
+source;share/vacuum_turtle/hook/ament_prefix_path.dsv
+source;share/vacuum_turtle/hook/ament_prefix_path.sh
