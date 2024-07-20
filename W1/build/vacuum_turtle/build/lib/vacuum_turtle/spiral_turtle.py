@@ -45,7 +45,7 @@ class SpiralTurtle(Node):
         self.pose.y = self.origin_y
 
         # Set the maximum distance from the origin
-        self.max_dist = 5.0
+        self.max_dist = 4.0 # Maximum distance to work reliably
 
     def update_pose(self, data):
         self.pose = data
