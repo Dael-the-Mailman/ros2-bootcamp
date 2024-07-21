@@ -37,10 +37,10 @@ class RandomTurtle(Node):
         self.goal_pose = Pose()
 
         # Position tolerance
-        self.tol = 0.01
+        self.tol = 0.1
 
         # Proportional controller constants
-        self.linear_kP = 2.0
+        self.linear_kP = 1.0
         self.angular_kP = 6.0
 
         self.time_step = 0.0
@@ -58,14 +58,14 @@ class RandomTurtle(Node):
     def timer_callback(self):
         msg = Twist()
 
-        if (self.time_step > 10.0):
-            self.time_step = 0.0
-
         if (self.time_step == 0.0):
             random_pos = np.random.rand(3)
-            self.goal_pose.x = self.linear_scale*random_pos[0] + self.linear_offset + self.origin_x
-            self.goal_pose.y = self.linear_scale*random_pos[1] + self.linear_offset + self.origin_y
-            self.goal_pose.theta = 2*np.pi*random_pos[2] - np.pi
+            self.goal_pose.x = round(self.linear_scale*random_pos[0] + self.linear_offset + self.origin_x, 2)
+            self.goal_pose.y = round(self.linear_scale*random_pos[1] + self.linear_offset + self.origin_y, 2)
+            self.goal_pose.theta = round(2*np.pi*random_pos[2] - np.pi, 2)
+
+            log_out = ", ".join( str(x) for x in [self.goal_pose.x, self.goal_pose.y, self.goal_pose.theta])
+            self.get_logger().info(log_out)
         
         # First reach the goal in the x,y coordinates
         if (self.distance(self.goal_pose) >= self.tol):
@@ -91,6 +91,9 @@ class RandomTurtle(Node):
             self.publisher.publish(msg)
         
         self.time_step += self.timer_period
+
+        if (self.time_step >= 10.0):
+            self.time_step = 0.0
 
 def main(args=None):
     rclpy.init(args=args)

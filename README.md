@@ -8,10 +8,14 @@
 
 ## Week 1+2
 ### 7 Dimensional State to 6 Dimensional State Pub/Sub
+![Publisher Output](/images/6_dim_publisher.png)
+![Subscriber Output](/images/6_dim_subscriber.png)
 
 ### Random Goal
+![Random Walk](/images/Random%20Walk.png)
 
 ### Vacuum Cleaning Script
+![Vacuum Turtle](/images/Vacuum%20Turtle.png)
 
 ## Week 3
 TODO
