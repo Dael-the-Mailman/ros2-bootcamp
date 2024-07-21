@@ -18,8 +18,8 @@
 I created two files, `publisher_member_function.py` and `subscriber_member_function.py`. The publisher file generated seven random numbers using `numpy` and converted them into a single string delimited by spaces. The subscriber file then receives the string and parses them based on the spaces. The subscriber file then removes the last element and converts the list of numbers into string delimited by commas.
 
 #### Code Referenced
-- [`publisher_member_function.py`](/W1/src/6_dim_state/6_dim_state/publisher_member_function.py)
-- [`subscriber_member_function.py`](/W1/src/6_dim_state/6_dim_state/subscriber_member_function.py)
+- [`publisher_member_function.py`](/Week%201+2/src/6_dim_state/6_dim_state/publisher_member_function.py)
+- [`subscriber_member_function.py`](/Week%201+2/src/6_dim_state/6_dim_state/subscriber_member_function.py)
 
 ### Random Goal
 ![Random Walk](/images/Random%20Walk.png)
@@ -30,7 +30,7 @@ Every 10 seconds, `numpy` would generate three random numbers $\in[0,1)$. It wou
 To move the turtle towards the goal, I first calculate the distance between the current position of the turtle and the goal position of the turtle. I then calculate the heading of the turtle using $\arctan(\Delta y, \Delta x)$. I then controlled the linear and angular velocity of the turtle using a proportional controller. Once the turtle has reached the goal position, I used the proportional controller to change the angle until the goal angle has been reached. 
 
 #### Code Referenced
-- [`random_walk.py`](/W1/src/random_turtle/random_turtle/random_walk.py)
+- [`random_walk.py`](/Week%201+2/src/random_turtle/random_turtle/random_walk.py)
 
 ### Vacuum Cleaning Script
 ![Vacuum Turtle](/images/Vacuum%20Turtle.png)
@@ -44,7 +44,7 @@ where $v_x$ is the velocity in the x-direction, $v_y$ is the velocity in the y-d
 To stop the turtle from going off the screen, I set a maximum distance of 4 units away from the origin. Once the turtle has reached 4 units away from the origin, a zero velocity signal is sent.
 
 #### Code Referenced
-- [`spiral_turtle.py`](/W1/src/vacuum_turtle/vacuum_turtle/spiral_turtle.py)
+- [`spiral_turtle.py`](/Week%201+2/src/vacuum_turtle/vacuum_turtle/spiral_turtle.py)
 
 ## Week 3
 TODO
