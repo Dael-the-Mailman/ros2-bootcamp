@@ -39,6 +39,7 @@ To move the turtle towards the goal, I first calculate the distance between the 
 To make the spiral I followed the equation for the Archimedean spiral. The equations for which are given below
 
 $$v_x=v\cos\omega t-\omega(vt+c)\sin\omega t$$
+
 $$v_y=v\sin\omega t+\omega(vt+c)\cos\omega t$$
 
 where $v_x$ is the velocity in the x-direction, $v_y$ is the velocity in the y-direction, $\omega$ is a constant angular velocity, $t$ is the time that has elapsed, and $c$ is the distance between the turtle and the origin.
