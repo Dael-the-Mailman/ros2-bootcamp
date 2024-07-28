@@ -50,7 +50,27 @@ To stop the turtle from going off the screen, I set a maximum distance of 4 unit
 - [`spiral_turtle.py`](/Week%201+2/src/vacuum_turtle/vacuum_turtle/spiral_turtle.py)
 
 ## Week 3
-TODO
+### Turtlebot Teleop Control
+![Turtle Bot Video](./videos/2024-07-28%2009-56-27.mov)
+
+### Turtlebot Random Goal
+TODO: Add video of turtle bot moving towards random goal
+
+#### Implementation
+TODO: 
+
+#### Code Referenced
+- TODO: 
+
+### Turtlebot Vacuum Cleaning
+TODO: Add video of turtlebot running the vacuum cleaning script
+
+#### Implementation
+TODO: 
+
+#### Code Referenced
+TODO: 
+
 
 ## Week 4
 TODO
