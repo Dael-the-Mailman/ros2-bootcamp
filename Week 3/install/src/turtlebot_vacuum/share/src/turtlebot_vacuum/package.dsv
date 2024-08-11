@@ -1,0 +1,3 @@
+source;share/src/turtlebot_vacuum/hook/pythonpath.ps1
+source;share/src/turtlebot_vacuum/hook/pythonpath.dsv
+source;share/src/turtlebot_vacuum/hook/pythonpath.sh

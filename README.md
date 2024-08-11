@@ -54,22 +54,26 @@ To stop the turtle from going off the screen, I set a maximum distance of 4 unit
 ![Turtle Bot Video](./videos/2024-07-28%2009-56-27.mov)
 
 ### Turtlebot Random Goal
-TODO: Add video of turtle bot moving towards random goal
+![Turtlebot Random Goal Video](./videos/2024-08-11%2016-26-46.mov)
 
 #### Implementation
-TODO: 
+I took a similar approach to the turtlesim. I first picked a random goal every 10 seconds. Next, I used a proportional controller to manuever the robot to the random point. Finally, I used a separate proportional controller to make the turtlebot face in a random direction. Note that unlike the turtlesim, I had to limit the speed of the turtlebot so that it didn't go too fast. I initially thought there was a built in speed limiter, but I was soon proven wrong.
 
 #### Code Referenced
-- TODO: 
+- [`random_goal.py`](/Week%203/src/turtlebot_random/turtlebot_random/random_goal.py) 
 
 ### Turtlebot Vacuum Cleaning
-TODO: Add video of turtlebot running the vacuum cleaning script
+![Turtlebot Vacuum Cleaning Video](/videos/2024-08-11%2016-29-48.mov)
 
 #### Implementation
-TODO: 
+I implemented a solution very similar to Week 1+2's vacuum cleaning script where you can assume the robot can reach any arbitrary speed you want. The only main difference is that instead of having independent x and y velocity components, the turtlebot will have a single linear velocity that is determined by the equation
+
+$$v_0=\sqrt{v^2+\omega^2(vt+c)}$$
+
+I first tried to implement a pure pursuit controller. I would generate a spiral path and then have the turtlebot follow that path. I spent a good amount of effort on trying to make the pure pursuit controller work but I haven't gotten it to work yet. I would definitely tackle the pure pursuit controller again once I have time.
 
 #### Code Referenced
-TODO: 
+- [`vacuum.py`](/Week%203/src/turtlebot_vacuum/turtlebot_vacuum/vacuum.py)
 
 
 ## Week 4
