@@ -52,6 +52,7 @@ To stop the turtle from going off the screen, I set a maximum distance of 4 unit
 ## Week 3
 ### Turtlebot Teleop Control
 ![Turtle Bot Video](./videos/2024-07-28%2009-56-27.mov)
+- [Rosbag for Teleop Control](/Week%203/rosbag2_2024_07_28-09_43_16/)
 
 ### Turtlebot Random Goal
 ![Turtlebot Random Goal Video](./videos/2024-08-11%2016-26-46.mov)
@@ -61,6 +62,7 @@ I took a similar approach to the turtlesim. I first picked a random goal every 1
 
 #### Code Referenced
 - [`random_goal.py`](/Week%203/src/turtlebot_random/turtlebot_random/random_goal.py) 
+- [Rosbag for Random Goal Script](/Week%203/rosbag2_turtlebot_random/)
 
 ### Turtlebot Vacuum Cleaning
 ![Turtlebot Vacuum Cleaning Video](/videos/2024-08-11%2016-29-48.mov)
@@ -68,12 +70,15 @@ I took a similar approach to the turtlesim. I first picked a random goal every 1
 #### Implementation
 I implemented a solution very similar to Week 1+2's vacuum cleaning script where you can assume the robot can reach any arbitrary speed you want. The only main difference is that instead of having independent x and y velocity components, the turtlebot will have a single linear velocity that is determined by the equation
 
-$$v_0=\sqrt{v^2+\omega^2(vt+c)}$$
+$$u=\sqrt{v^2+\omega^2(vt+c)^2}$$
+
+where $u$ is the command velocity of the turtlebot, $v$ is a constant velocity variable, $\omega$ is a constant angular velocity, $t$ is the time that has elapsed, and $c$ is the distance between the turtle and the origin.
 
 I first tried to implement a pure pursuit controller. I would generate a spiral path and then have the turtlebot follow that path. I spent a good amount of effort on trying to make the pure pursuit controller work but I haven't gotten it to work yet. I would definitely tackle the pure pursuit controller again once I have time.
 
 #### Code Referenced
 - [`vacuum.py`](/Week%203/src/turtlebot_vacuum/turtlebot_vacuum/vacuum.py)
+- [Rosbag for Vacuum Cleaning Script](/Week%203/rosbag2_turtlebot_vacuum/)
 
 
 ## Week 4
